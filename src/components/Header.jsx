@@ -6,11 +6,11 @@ function Header() {
       <img src="https://cataas.com/cat" alt="Gato" width="50" />
 
       <nav>
-        <Link to="/">Navegador</Link>
-        
-        <Link to="/chuck">Chuck Norris</Link>
-        
-        <Link to="/sobre">Sobre</Link>
+        <Link to="/">NAVEGADOR</Link>
+
+        <Link to="/chuck">CHUCK NORRIS</Link>
+
+        <Link to="/sobre">SOBRE</Link>
       </nav>
     </header>
   )
