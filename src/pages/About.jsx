@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="card about">
       <div className="avatar-wrapper">
-        <img src="/avatar.jpg" alt="Avatar do aluno" className="about-avatar" />
+        <img src="/avatar.jpg" alt="Avatar" className="about-avatar" />
       </div>
       <h2>Alexandre Paschoal Teles de Andrade</h2>
 
