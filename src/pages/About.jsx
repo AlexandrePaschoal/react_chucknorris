@@ -3,12 +3,9 @@ import { FaLinkedin } from "react-icons/fa"
 function About() {
   return (
     <div className="card about">
-      <img
-        src="/avatar.jpg" // ou URL externa
-        alt="Avatar do aluno"
-        className="about-avatar"
-      />
-
+      <div className="avatar-wrapper">
+        <img src="/avatar.jpg" alt="Avatar do aluno" className="about-avatar" />
+      </div>
       <h2>Alexandre Paschoal Teles de Andrade</h2>
 
       <p className="linkedin">

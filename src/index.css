@@ -105,19 +105,25 @@ header nav a:hover {
 }
 
 .card img {
-  max-width: 100px;
+  max-width: 140px;
 }
 
 .about {
   text-align: center;
 }
 
-.about-avatar {
-  width: 140px;   
-  height: 140px;
-  object-fit: cover;  
-  border-radius: 100%; 
+.avatar-wrapper {
+  width: 140px;
+  height: 140px;    
+  border-radius: 50%;
+  overflow: hidden;
   margin: 0 auto 20px;
+}
+
+.about-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
