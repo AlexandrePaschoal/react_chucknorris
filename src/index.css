@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -9,20 +10,14 @@ main {
   align-items: center;
 }
 
-
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #1e1e1e;
   color: #ffffff;
   min-height: 100vh;
 
-  background: linear-gradient(
-    135deg,
-    #0f2027,
-    #203a43,
-    #2c5364
-  );
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 
   color: #ffffff;
 }
@@ -39,11 +34,11 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
-
 header img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 header nav {
@@ -52,8 +47,8 @@ header nav {
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  flex: 1;
   gap: 30px;
+  white-space: nowrap; /* 🔑 impede quebra de linha */
 }
 
 header nav a {
@@ -63,12 +58,24 @@ header nav a {
   padding: 6px 14px;
   border-radius: 6px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
 }
 
 header nav a:hover {
   color: #11a96cff;
 }
-  
+
+@media (max-width: 768px) {
+  header nav {
+    gap: 16px;
+  }
+
+  header nav a {
+    font-size: 0.9rem;
+    padding: 4px 10px;
+  }
+}
+
 .card {
   background-color: #2a2a2a;
   margin: 40px auto;
@@ -98,7 +105,6 @@ header nav a:hover {
   color: #50eaaab3;
 }
 
-
 .card p {
   margin: 8px 0;
   line-height: 1.4;
@@ -114,7 +120,7 @@ header nav a:hover {
 
 .avatar-wrapper {
   width: 140px;
-  height: 140px;    
+  height: 140px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 20px;
