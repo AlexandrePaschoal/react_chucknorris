@@ -24,7 +24,7 @@ body {
 
 header {
   position: relative;
-  z-index: 10; /* garante que fique acima do conteúdo */
+  z-index: 10;
   height: 80px;
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@ header nav {
   display: flex;
   justify-content: center;
   gap: 30px;
-  white-space: nowrap; /* 🔑 impede quebra de linha */
+  white-space: nowrap;
 }
 
 header nav a {
